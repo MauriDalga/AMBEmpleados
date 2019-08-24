@@ -1,0 +1,62 @@
+MATABURROS GIT
+
+#Stage
+git add -A : stages all changes
+git add . : stages (all - deletions)
+git add -u : stages (all - new)
+
+#Commit
+git commit -m "message"
+git commit --amend : Modify last commit, adding more changes and open text editor to make a new message
+
+#Commit y add 
+git config --global alias.add-commit '!git add -A && git commit'
+git add-commit -m 'message'
+
+#Push
+git push <remote> <branch> : Push all branch commits to origin branch, can't be if remote have new commits.
+git push <remote> -all : Push all branches to remote
+git push --force <remote> <branch> : Force push local branch... rewrite origin log
+
+#Move
+git checkout <branch> : move to branch
+git checkout -b <branch>  : create and move to branch
+git checkout <commit> : move to commit
+
+#Log
+git status : show proyect files staus (untracked, modified)
+git log : show extended commits current branch log
+git log --oneline : show oneline commits
+git log -p -<number> : Show code changes into <number> of past commits
+git branch : show local branches
+git branch -r : show remote branches
+git branch -a : show all branches
+
+#Undo
+git clean -f : Removes untracked files
+git reset --soft <commit> : Localy delete commits history after <commit>, all changes remain then into stage and working area
+git reset --mixed <commit> : Same... But all  changes remain only into working area
+git reset --hard <commit> : Same... But delete all
+git reset <commit> : Default --mixed
+git reset --hard -2 : reset hard back 2 commits before HEAD, can be general (--soft -7)
+git revert <commit> : Back to some commit whitout deleting commit history, then commit undo changes. Best clean way to undo into collaborative teams
+git branch -d <branch> : Delete branch, need to set up into another branch first
+git push --delete <remote> <branch> : Delete remote branch
+git rebase -i HEAD~<number> : Open interactive rebase, makes various types of changes into log history. Selecting <number> previous commits want to change...
+ 
+#Remote
+git remote add <alias> <url> : Add new remote, can be more than 1
+git remote -v : Show remote detailed list
+git remote rm <alias> : Remove alias remote
+git remote rename <oldAlias> <newAlias> : Rename
+
+#Diff
+git diff : show diff of last commit
+git diff <commit1> <commit2> : show diffs of that 2 commits
+
+#Initial
+git init : new repository
+git clone <url> : clone repository into local
+git config --global user.name <name>
+git config --local user.email <email>
+git config --system core.editor <editor>
