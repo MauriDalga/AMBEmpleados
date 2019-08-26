@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace AMBEmpleados.Views
@@ -14,7 +8,7 @@ namespace AMBEmpleados.Views
         public MainForm()
         {
             InitializeComponent();
-            this.contentPane.Controls.Add(new Welcome());
+            contentPane.Controls.Add(new Welcome());
         }
 
         private void homeButton_Click(object sender, EventArgs e)
@@ -33,6 +27,12 @@ namespace AMBEmpleados.Views
         {
             contentPane.Controls.Clear();
             contentPane.Controls.Add(new Modify());
+        }
+
+        private void ListButton_Click(object sender, EventArgs e)
+        {
+            contentPane.Controls.Clear();
+            contentPane.Controls.Add(new ListAll());
         }
     }
 }

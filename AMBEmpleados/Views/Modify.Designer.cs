@@ -218,7 +218,7 @@
             this.cancelModifyButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cancelModifyButton.Location = new System.Drawing.Point(469, 375);
             this.cancelModifyButton.Name = "cancelModifyButton";
-            this.cancelModifyButton.Size = new System.Drawing.Size(91, 34);
+            this.cancelModifyButton.Size = new System.Drawing.Size(99, 33);
             this.cancelModifyButton.TabIndex = 27;
             this.cancelModifyButton.Text = "Cancelar";
             this.cancelModifyButton.UseVisualStyleBackColor = false;
@@ -242,7 +242,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(223, 12);
+            this.label1.Location = new System.Drawing.Point(225, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(263, 29);
             this.label1.TabIndex = 29;

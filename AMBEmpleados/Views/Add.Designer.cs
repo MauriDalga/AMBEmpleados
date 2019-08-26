@@ -33,7 +33,6 @@
             this.birthLabel = new System.Windows.Forms.Label();
             this.hiringLabel = new System.Windows.Forms.Label();
             this.salaryLabel = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.codeNumericBox = new System.Windows.Forms.NumericUpDown();
             this.salaryNumericBox = new System.Windows.Forms.NumericUpDown();
@@ -41,6 +40,7 @@
             this.bornDatePicker = new System.Windows.Forms.DateTimePicker();
             this.addButton = new System.Windows.Forms.Button();
             this.cancelAddButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.codeNumericBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salaryNumericBox)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             this.codeLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.codeLabel.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codeLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.codeLabel.Location = new System.Drawing.Point(53, 79);
+            this.codeLabel.Location = new System.Drawing.Point(72, 85);
             this.codeLabel.Name = "codeLabel";
             this.codeLabel.Size = new System.Drawing.Size(51, 16);
             this.codeLabel.TabIndex = 0;
@@ -63,7 +63,7 @@
             this.completeNameLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.completeNameLabel.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.completeNameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.completeNameLabel.Location = new System.Drawing.Point(53, 117);
+            this.completeNameLabel.Location = new System.Drawing.Point(72, 132);
             this.completeNameLabel.Name = "completeNameLabel";
             this.completeNameLabel.Size = new System.Drawing.Size(122, 16);
             this.completeNameLabel.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.birthLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.birthLabel.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.birthLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.birthLabel.Location = new System.Drawing.Point(53, 167);
+            this.birthLabel.Location = new System.Drawing.Point(72, 189);
             this.birthLabel.Name = "birthLabel";
             this.birthLabel.Size = new System.Drawing.Size(138, 16);
             this.birthLabel.TabIndex = 2;
@@ -87,7 +87,7 @@
             this.hiringLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.hiringLabel.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hiringLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.hiringLabel.Location = new System.Drawing.Point(53, 217);
+            this.hiringLabel.Location = new System.Drawing.Point(72, 239);
             this.hiringLabel.Name = "hiringLabel";
             this.hiringLabel.Size = new System.Drawing.Size(114, 16);
             this.hiringLabel.TabIndex = 3;
@@ -99,73 +99,89 @@
             this.salaryLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.salaryLabel.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salaryLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.salaryLabel.Location = new System.Drawing.Point(53, 269);
+            this.salaryLabel.Location = new System.Drawing.Point(72, 291);
             this.salaryLabel.Name = "salaryLabel";
             this.salaryLabel.Size = new System.Drawing.Size(108, 16);
             this.salaryLabel.TabIndex = 4;
             this.salaryLabel.Text = "Salario por hora";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(55, 306);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 13);
-            this.label6.TabIndex = 5;
-            // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(276, 113);
+            this.nameTextBox.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.nameTextBox.Location = new System.Drawing.Point(295, 131);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(292, 20);
+            this.nameTextBox.Size = new System.Drawing.Size(292, 22);
             this.nameTextBox.TabIndex = 6;
             // 
             // codeNumericBox
             // 
-            this.codeNumericBox.Location = new System.Drawing.Point(276, 74);
+            this.codeNumericBox.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.codeNumericBox.Location = new System.Drawing.Point(295, 85);
             this.codeNumericBox.Name = "codeNumericBox";
-            this.codeNumericBox.Size = new System.Drawing.Size(120, 20);
+            this.codeNumericBox.Size = new System.Drawing.Size(172, 22);
             this.codeNumericBox.TabIndex = 7;
             // 
             // salaryNumericBox
             // 
-            this.salaryNumericBox.Location = new System.Drawing.Point(276, 265);
+            this.salaryNumericBox.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.salaryNumericBox.Location = new System.Drawing.Point(295, 291);
             this.salaryNumericBox.Name = "salaryNumericBox";
-            this.salaryNumericBox.Size = new System.Drawing.Size(172, 20);
+            this.salaryNumericBox.Size = new System.Drawing.Size(172, 22);
             this.salaryNumericBox.TabIndex = 8;
             // 
             // hiringDatePicker
             // 
-            this.hiringDatePicker.Location = new System.Drawing.Point(276, 217);
+            this.hiringDatePicker.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.hiringDatePicker.Location = new System.Drawing.Point(295, 235);
             this.hiringDatePicker.Name = "hiringDatePicker";
-            this.hiringDatePicker.Size = new System.Drawing.Size(228, 20);
+            this.hiringDatePicker.Size = new System.Drawing.Size(292, 22);
             this.hiringDatePicker.TabIndex = 9;
             // 
             // bornDatePicker
             // 
-            this.bornDatePicker.Location = new System.Drawing.Point(276, 167);
+            this.bornDatePicker.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.bornDatePicker.Location = new System.Drawing.Point(295, 185);
             this.bornDatePicker.Name = "bornDatePicker";
-            this.bornDatePicker.Size = new System.Drawing.Size(228, 20);
+            this.bornDatePicker.Size = new System.Drawing.Size(292, 22);
             this.bornDatePicker.TabIndex = 10;
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(116, 336);
+            this.addButton.BackColor = System.Drawing.Color.White;
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addButton.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.addButton.Location = new System.Drawing.Point(125, 368);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.Size = new System.Drawing.Size(99, 33);
             this.addButton.TabIndex = 11;
             this.addButton.Text = "Agregar";
-            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // cancelAddButton
             // 
-            this.cancelAddButton.Location = new System.Drawing.Point(461, 336);
+            this.cancelAddButton.BackColor = System.Drawing.Color.White;
+            this.cancelAddButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cancelAddButton.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.cancelAddButton.Location = new System.Drawing.Point(470, 368);
             this.cancelAddButton.Name = "cancelAddButton";
-            this.cancelAddButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelAddButton.Size = new System.Drawing.Size(99, 33);
             this.cancelAddButton.TabIndex = 12;
             this.cancelAddButton.Text = "Cancelar";
-            this.cancelAddButton.UseVisualStyleBackColor = true;
+            this.cancelAddButton.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(248, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(241, 29);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Agregar Empleado";
             // 
             // Add
             // 
@@ -174,12 +190,12 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Controls.Add(this.cancelAddButton);
             this.Controls.Add(this.addButton);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bornDatePicker);
             this.Controls.Add(this.hiringDatePicker);
             this.Controls.Add(this.salaryNumericBox);
             this.Controls.Add(this.codeNumericBox);
             this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.salaryLabel);
             this.Controls.Add(this.hiringLabel);
             this.Controls.Add(this.birthLabel);
@@ -201,7 +217,6 @@
         private System.Windows.Forms.Label birthLabel;
         private System.Windows.Forms.Label hiringLabel;
         private System.Windows.Forms.Label salaryLabel;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.NumericUpDown codeNumericBox;
         private System.Windows.Forms.NumericUpDown salaryNumericBox;
@@ -209,5 +224,6 @@
         private System.Windows.Forms.DateTimePicker bornDatePicker;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button cancelAddButton;
+        private System.Windows.Forms.Label label1;
     }
 }
